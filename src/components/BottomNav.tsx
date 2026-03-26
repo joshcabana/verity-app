@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Calendar, MessageCircle, User, Coins } from "lucide-react";
+import { Calendar, MessageCircle, User, Coins, Gift } from "lucide-react";
 
 const tabs = [
   { href: "/drops", label: "Drops", icon: Calendar },
   { href: "/chat", label: "Chat", icon: MessageCircle },
+  { href: "/invite", label: "Invite", icon: Gift },
   { href: "/profile", label: "Profile", icon: User },
   { href: "/tokens", label: "Shop", icon: Coins },
 ] as const;

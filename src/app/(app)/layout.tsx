@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { BottomNav } from '@/components/BottomNav';
+import { PushPrompt } from '@/components/PushPrompt';
 
 export const metadata: Metadata = {
   title: {
@@ -17,6 +18,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       {children}
+      <PushPrompt />
       <BottomNav />
     </>
   );
