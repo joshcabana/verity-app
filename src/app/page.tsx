@@ -271,6 +271,21 @@ export default async function LandingPage() {
         </div>
       </section>
 
+      {/* ── CROSS-PROMO ── */}
+      <section className="py-6 px-6 border-t border-border/50">
+        <div className="max-w-md mx-auto text-center">
+          <a
+            href="https://aithreatbrief.com/tools?utm_source=verity&utm_medium=banner&utm_campaign=cross-promo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-muted/60 hover:text-muted transition-colors"
+          >
+            Privacy-first dating needs privacy-first tools.
+            See what security pros actually use →
+          </a>
+        </div>
+      </section>
+
       {/* ── FOOTER ── */}
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
