@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0A0A0A;
+  --color-surface: #111111;
+  --color-card: #1a1a1a;
+  --color-border: #262626;
+  --color-gold: #D4AF37;
+  --color-gold-light: #DFC172;
+  --color-gold-dark: #A97C1A;
+  --color-foreground: #f2f2f2;
+  --color-muted: #a3a3a3;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --radius-DEFAULT: 0.75rem;
+}
+
+body {
+  background-color: #0A0A0A;
+  color: #f2f2f2;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #D4AF37;
+  color: #0A0A0A;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37, #DFC172, #D4AF37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.label-caps {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #a3a3a3;
+}
+
+.ghost-pill {
+  border: 1.5px solid #D4AF37;
+  background: transparent;
+  color: #D4AF37;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1.5rem;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ghost-pill:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.ghost-pill:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
