@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AuthProvider } from "@/contexts/AuthProvider";
 import "./globals.css";
 
@@ -45,6 +47,8 @@ export default function RootLayout({
               },
             }}
           />
+          <Analytics />
+          <SpeedInsights />
         </AuthProvider>
       </body>
     </html>
