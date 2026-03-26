@@ -1,0 +1,19 @@
+project_id = "nhpbxlvogqnqutmflwlk"
+
+[functions.agora-demo-token]
+verify_jwt = false
+
+[functions.generate-friend-invite]
+verify_jwt = false
+
+[functions.send-push]
+verify_jwt = false
+
+[functions.aggregate-stats]
+verify_jwt = false
+
+[functions.export-my-data]
+verify_jwt = false
+
+[functions.delete-account]
+verify_jwt = false
