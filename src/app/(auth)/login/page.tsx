@@ -1,10 +1,10 @@
-'use client';
 
 "use client";
 
 import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { toast } from "sonner";
+import Image from "next/image";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -46,14 +46,24 @@ export default function LoginPage() {
         {/* Card */}
         <div className="bg-card border border-border rounded-xl p-8 space-y-8">
           {/* Logo */}
-          <div className="text-center">
+          <div className="text-center space-y-3">
+            <div className="flex justify-center">
+              <Image
+                src="/v-mark-512.png"
+                alt="Verity"
+                width={56}
+                height={56}
+                className="drop-shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                priority
+              />
+            </div>
             <h1
               className="font-serif text-3xl font-semibold gold-gradient-text"
               style={{ letterSpacing: "0.25em" }}
             >
               VERITY
             </h1>
-            <p className="mt-2 text-muted text-xs label-caps">
+            <p className="text-muted text-xs label-caps">
               Sign in to continue
             </p>
           </div>

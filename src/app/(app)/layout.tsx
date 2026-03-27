@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { BottomNav } from '@/components/BottomNav';
 import { PushPrompt } from '@/components/PushPrompt';
+import { AppHeader } from '@/components/AppHeader';
 
 export const metadata: Metadata = {
   title: {
@@ -10,14 +11,17 @@ export const metadata: Metadata = {
   description: 'Video-first dating built on trust and genuine connection.',
   openGraph: {
     siteName: 'Verity',
-    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
 };
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {children}
+      <AppHeader />
+      <main className="pb-20">
+        {children}
+      </main>
       <PushPrompt />
       <BottomNav />
     </>

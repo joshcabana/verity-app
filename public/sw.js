@@ -4,8 +4,8 @@ self.addEventListener('push', (event) => {
   const title = data.title || 'Verity';
   const options = {
     body: data.body || 'Something happened on Verity.',
-    icon: '/icon-192.png',
-    badge: '/icon-192.png',
+    icon: '/v-mark-192.png',
+    badge: '/v-mark-64.png',
     data: { url: data.url || '/drops' },
     vibrate: [100, 50, 100],
   };

@@ -71,8 +71,8 @@ Deno.serve(async (req) => {
       title,
       body,
       url: url || "/",
-      icon: "/favicon.png",
-      badge: "/favicon.png",
+      icon: "/v-mark-192.png",
+      badge: "/v-mark-64.png",
     });
 
     let sent = 0;

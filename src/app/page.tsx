@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     title: "Verity — Anonymous Video Dating",
     description:
       "See their vibe, not their face. Spark → match → reveal. Launching in Canberra.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
 };
 
@@ -61,7 +62,20 @@ export default async function LandingPage() {
             LAUNCHING IN CANBERRA
           </p>
 
-          {/* Logo */}
+          {/* V-mark logo */}
+          <div className="flex justify-center">
+            <div className="relative w-20 h-20 sm:w-24 sm:h-24">
+              <Image
+                src="/v-mark-512.png"
+                alt="Verity"
+                fill
+                className="object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.3)]"
+                priority
+              />
+            </div>
+          </div>
+
+          {/* Wordmark */}
           <h1
             className="font-serif text-5xl sm:text-6xl font-semibold gold-gradient-text"
             style={{ letterSpacing: "0.2em" }}
@@ -274,7 +288,10 @@ export default async function LandingPage() {
       {/* ── FOOTER ── */}
       <footer className="py-8 px-6 border-t border-border">
         <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
-          <p>© 2026 Verity. Made in Canberra, Australia.</p>
+          <div className="flex items-center gap-2">
+            <Image src="/v-mark-64.png" alt="" width={16} height={16} className="opacity-60" />
+            <p>© 2026 Verity. Made in Canberra, Australia.</p>
+          </div>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-foreground transition-colors">
               Privacy
