@@ -62,26 +62,27 @@ export default async function LandingPage() {
             LAUNCHING IN CANBERRA
           </p>
 
-          {/* V-mark logo */}
-          <div className="flex justify-center">
-            <div className="relative w-20 h-20 sm:w-24 sm:h-24">
-              <Image
-                src="/v-mark-512.png"
-                alt="Verity"
-                fill
-                className="object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.3)]"
-                priority
-              />
+          {/* V-mark logo + wordmark */}
+          <div className="space-y-2">
+            <div className="flex justify-center">
+              <div className="relative w-28 h-28 sm:w-36 sm:h-36">
+                <Image
+                  src="/v-mark-512.png"
+                  alt="Verity"
+                  fill
+                  className="object-contain"
+                  style={{ filter: "drop-shadow(0 0 40px rgba(212,175,55,0.25)) drop-shadow(0 0 80px rgba(212,175,55,0.1))" }}
+                  priority
+                />
+              </div>
             </div>
+            <h1
+              className="font-serif text-5xl sm:text-6xl font-semibold gold-gradient-text"
+              style={{ letterSpacing: "0.2em" }}
+            >
+              VERITY
+            </h1>
           </div>
-
-          {/* Wordmark */}
-          <h1
-            className="font-serif text-5xl sm:text-6xl font-semibold gold-gradient-text"
-            style={{ letterSpacing: "0.2em" }}
-          >
-            VERITY
-          </h1>
 
           {/* Headline */}
           <div className="space-y-3">

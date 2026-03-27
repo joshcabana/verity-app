@@ -51,9 +51,9 @@ export default function LoginPage() {
               <Image
                 src="/v-mark-512.png"
                 alt="Verity"
-                width={56}
-                height={56}
-                className="drop-shadow-[0_0_20px_rgba(212,175,55,0.25)]"
+                width={60}
+                height={60}
+                style={{ filter: "drop-shadow(0 0 24px rgba(212,175,55,0.2))" }}
                 priority
               />
             </div>
