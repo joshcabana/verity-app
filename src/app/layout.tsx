@@ -6,10 +6,10 @@ import { AuthProvider } from "@/contexts/AuthProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Verity — Real Dates. Real People.",
+  title: "Verity â Anonymous Video Dating. Canberra First.",
   description:
-    "Verity is a video-first dating experience built on trust, safety, and genuine connection. Join curated drops, meet face-to-face over video, and discover real chemistry.",
-  keywords: ["dating", "video dating", "real connections", "safe dating"],
+    "45 seconds of anonymous video. Real voice, real eyes, no filters. Your identity stays hidden until you both say yes. Join the next Drop â free.",
+  keywords: ["dating", "video dating", "anonymous dating", "real connections", "safe dating", "Canberra"],
   icons: {
     icon: [
       { url: "/v-mark-64.png", sizes: "64x64", type: "image/png" },
@@ -21,12 +21,20 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Verity — Real Dates. Real People.",
+    title: "Verity â Anonymous Video Dating",
     description:
-      "Video-first dating built on trust and genuine connection.",
+      "See their vibe, not their face. Spark â match â reveal. Launching in Canberra.",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    url: "https://app.getverity.com.au",
+    images: [{ url: "https://app.getverity.com.au/og-image.jpg", width: 1200, height: 630 }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Verity â Anonymous Video Dating",
+    description: "See their vibe, not their face. Spark â match â reveal. Launching in Canberra.",
+    images: ["https://app.getverity.com.au/og-image.jpg"],
+  },
+  metadataBase: new URL("https://app.getverity.com.au"),
 };
 
 export const viewport: Viewport = {
